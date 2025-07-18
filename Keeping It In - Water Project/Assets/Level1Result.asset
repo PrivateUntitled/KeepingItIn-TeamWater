@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e55d748a4f033bd44a199bc11cfe69e4, type: 3}
+  m_Name: Level1Result
+  m_EditorClassIdentifier: 
+  question: What did you contribute to this family?
+  dialogueOptions:
+  - dialogue: I brought joy in my own way and I love my family.
+    requiredPoints: 20
+    ending: 0
+  - dialogue: I did what you told me! I am doing everything to give you what you
+      want.
+    requiredPoints: 10
+    ending: 1
+  - dialogue: I didn't even want to be born into this family!
+    requiredPoints: 5
+    ending: 2

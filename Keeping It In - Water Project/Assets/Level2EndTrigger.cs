@@ -7,9 +7,9 @@ public class Level2EndTrigger : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.GetComponent<SphereCollider>())
+        if(other.gameObject.tag == "Boulder")
         {
-            SceneManager.LoadScene("EndScene_Lvl2");
+            SceneManager.LoadScene("EndScene_Lvl_2");
         }
     }
 }

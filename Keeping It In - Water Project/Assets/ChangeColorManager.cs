@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeColorManager : MonoSingleton<ChangeColorManager>
+public class ChangeColorManager : MonoBehaviour
 {
     [SerializeField] private SkinnedMeshRenderer player;
     private Material desiredMaterial;

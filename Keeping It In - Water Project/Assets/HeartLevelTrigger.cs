@@ -11,6 +11,7 @@ public class HeartLevelTrigger : MonoBehaviour
     {
         if (other.GetComponent<CharacterControls>())
         {
+            Debug.Log(sceneName);
             StartCoroutine(AdditiveSceneManager.instance.LoadAsyncScene(sceneName));
             StartCoroutine(AdditiveSceneManager.instance.RemoveAsyncScene());
         }

@@ -6,6 +6,7 @@ public class ChangeMaterial : MonoBehaviour
 {
     [SerializeField] private Material newMaterial;
     [SerializeField] private Door door;
+    [SerializeField] private ChangeColorManager colorChanger;
 
     private void Update()
     {
@@ -16,7 +17,7 @@ public class ChangeMaterial : MonoBehaviour
     {
         if(other.gameObject.GetComponent<HeartPlayerControls>())
         {
-            ChangeColorManager.instance.StartChange(newMaterial);
+            colorChanger.StartChange(newMaterial);
             Destroy(this.gameObject);
 
             if(door)

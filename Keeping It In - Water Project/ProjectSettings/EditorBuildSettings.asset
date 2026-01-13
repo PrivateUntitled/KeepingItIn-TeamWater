@@ -4,5 +4,32 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/HeartRoom/HeartRoom.unity
+    guid: f3b8b810328119f4284bdac82cadcbf1
+  - enabled: 1
+    path: Assets/HeartRoom/HeartRoom 1.unity
+    guid: 2621563aaef0df24993f4501148d0239
+  - enabled: 1
+    path: Assets/HeartRoom/HeartRoom 2.unity
+    guid: 8246ae7529c9a084c977340c4b4ddc25
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 844b5020d716656458b752735e6b194e
+  - enabled: 1
+    path: Assets/Level2/Level2.unity
+    guid: 20544b7373943bb4aa55f39f0ded22a4
+  - enabled: 1
+    path: Assets/Level3/Level3.unity
+    guid: 685fc49736fba77469599d661960e0cd
+  - enabled: 1
+    path: Assets/EndScene_Level_1/EndScene_Lvl_1.unity
+    guid: 222536f75ae081a439fb461ef247e12c
+  - enabled: 1
+    path: Assets/EndScene_Level_2/EndScene_Lvl_2.unity
+    guid: 76cc963c5ceffd24fa73d1345f22c8c1
+  - enabled: 1
+    path: Assets/EndScene_Level_3/EndScene_Lvl_3.unity
+    guid: 72ef14d7f55cc7d4fb40948c4c98ced1
   m_configObjects: {}

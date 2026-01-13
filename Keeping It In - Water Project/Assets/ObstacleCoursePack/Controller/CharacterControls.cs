@@ -141,6 +141,23 @@ public class CharacterControls : MonoBehaviour
 		moveDir = (v2 + h2).normalized; //Global position to which I want to move in magnitude 1
 
 		anim.SetBool("IsWalking", h != 0 || v != 0);
+		RaycastHit pushingHit;
+
+		Debug.DrawLine(transform.position, new Vector3(0, 0.45f, 0.45f), Color.red);
+		if (Physics.Raycast(transform.position, new Vector3(0, 0.45f, 0.45f), out pushingHit, 1f))
+        {
+			if (pushingHit.transform.tag == "Boulder")
+            {
+				Debug.Log("Pushing");
+				anim.SetBool("IsPushing", true);
+			} else
+            {
+				anim.SetBool("IsPushing", false);
+			}
+        } else
+        {
+			anim.SetBool("IsPushing", false);
+		}
 
 		RaycastHit hit;
 		if (Physics.Raycast(transform.position, -Vector3.up, out hit, distToGround + 0.1f))

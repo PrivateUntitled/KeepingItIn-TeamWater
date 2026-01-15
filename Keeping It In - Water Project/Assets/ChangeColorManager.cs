@@ -13,6 +13,7 @@ public class ChangeColorManager : MonoBehaviour
     private void Start()
     {
         desiredMaterial = player.material;
+        Debug.Log("Added Changes");
     }
 
     // Update is called once per frame
